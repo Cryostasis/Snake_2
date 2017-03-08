@@ -137,7 +137,8 @@ void MainFrame::render(wxDC&  dc)
 
 	dc.SetBrush(*wxRED_BRUSH);
 	dc.SetPen(wxPen(wxColor(255, 0, 0), 2));
-	dc.DrawCircle(SZ * _food.first + SZ / 2 - 1, SZ * _food.second + SZ / 2 - 1, SZ * 0.5 - 2);
+	if (timer != nullptr && timer->IsRunning())
+		dc.DrawCircle(SZ * _food.first + SZ / 2 - 1, SZ * _food.second + SZ / 2 - 1, SZ * 0.5 - 2);
 }
 
 void MainFrame::StartButtonOnButtonClick(wxCommandEvent & event)

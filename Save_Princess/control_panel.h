@@ -1,6 +1,5 @@
 #pragma once
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning (disable: 4996)
+
 #include <wx/wx.h>
 #include <wx/artprov.h>
 #include <wx/xrc/xmlres.h>

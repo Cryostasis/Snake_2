@@ -1,8 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning (disable: 4996)
-#include <GL/glew.h>
-#include <GL/freeglut.h>
-
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
